@@ -101,7 +101,8 @@ ruleset {
     IfStatementCouldBeTernary
     InvertedIfElse
     LongLiteralWithLowerCaseL
-//    NoDef
+    
+    // NoDef
     ParameterReassignment
     TernaryCouldBeElvis
     VectorIsObsolete
@@ -131,15 +132,15 @@ ruleset {
     ToStringReturnsNull
 
     // rulesets/dry.xml
-//    DuplicateListLiteral
-//    DuplicateMapLiteral
-//    DuplicateNumberLiteral
-//    DuplicateStringLiteral
+    //    DuplicateListLiteral
+    //    DuplicateMapLiteral
+    //    DuplicateNumberLiteral
+    //    DuplicateStringLiteral
 
     // rulesets/enhanced.xml
-//    CloneWithoutCloneable
+    //    CloneWithoutCloneable
     JUnitAssertEqualsConstantActualValue
-//    UnsafeImplementationAsMap
+    // UnsafeImplementationAsMap
 
     // rulesets/exceptions.xml
     CatchArrayIndexOutOfBoundsException
@@ -163,35 +164,35 @@ ruleset {
     ThrowRuntimeException
     ThrowThrowable
 
-    // rulesets/formatting.xml
-    BlankLineBeforePackage
-    BracesForClass
-    BracesForForLoop
-    BracesForIfElse
-    BracesForMethod
-    BracesForTryCatchFinally
-//    ClassJavadoc
-    ClosureStatementOnOpeningLineOfMultipleLineClosure
-    ConsecutiveBlankLines
-    FileEndsWithoutNewline
-    LineLength
-    MissingBlankLineAfterImports
-    MissingBlankLineAfterPackage
-    SpaceAfterCatch
-    SpaceAfterClosingBrace
-    SpaceAfterComma
-    SpaceAfterFor
-    SpaceAfterIf
-    SpaceAfterOpeningBrace
-    SpaceAfterSemicolon
-    SpaceAfterSwitch
-    SpaceAfterWhile
-    SpaceAroundClosureArrow
-    SpaceAroundMapEntryColon(characterAfterColonRegex: /\s/)
-    SpaceAroundOperator
-    SpaceBeforeClosingBrace
-    SpaceBeforeOpeningBrace
-    TrailingWhitespace
+//     // rulesets/formatting.xml
+//     BlankLineBeforePackage
+//     BracesForClass
+//     BracesForForLoop
+//     BracesForIfElse
+//     BracesForMethod
+//     BracesForTryCatchFinally
+// //    ClassJavadoc
+//     ClosureStatementOnOpeningLineOfMultipleLineClosure
+//     ConsecutiveBlankLines
+//     FileEndsWithoutNewline
+//     LineLength
+//     MissingBlankLineAfterImports
+//     MissingBlankLineAfterPackage
+//     SpaceAfterCatch
+//     SpaceAfterClosingBrace
+//     SpaceAfterComma
+//     SpaceAfterFor
+//     SpaceAfterIf
+//     SpaceAfterOpeningBrace
+//     SpaceAfterSemicolon
+//     SpaceAfterSwitch
+//     SpaceAfterWhile
+//     SpaceAroundClosureArrow
+//     SpaceAroundMapEntryColon(characterAfterColonRegex: /\s/)
+//     SpaceAroundOperator
+//     SpaceBeforeClosingBrace
+    //SpaceBeforeOpeningBrace
+//     TrailingWhitespace
 
     // rulesets/generic.xml
     IllegalClassMember
@@ -204,8 +205,8 @@ ruleset {
     StatelessClass
 
     // rulesets/grails.xml
-//    GrailsDomainHasEquals
-//    GrailsDomainHasToString
+    //    GrailsDomainHasEquals
+    //    GrailsDomainHasToString
     GrailsDomainReservedSqlKeywordName
     GrailsDomainWithServiceReference
     GrailsDuplicateConstraint
@@ -266,30 +267,30 @@ ruleset {
     JdbcStatementReference
 
     // rulesets/junit.xml
-//    ChainedTest
-//    CoupledTestCase
-//    JUnitAssertAlwaysFails
-//    JUnitAssertAlwaysSucceeds
-//    JUnitFailWithoutMessage
-//    JUnitLostTest
-//    JUnitPublicField
-//    JUnitPublicNonTestMethod
-//    JUnitPublicProperty
-//    JUnitSetUpCallsSuper
-//    JUnitStyleAssertions
-//    JUnitTearDownCallsSuper
-//    JUnitTestMethodWithoutAssert
-//    JUnitUnnecessarySetUp
-//    JUnitUnnecessaryTearDown
-//    JUnitUnnecessaryThrowsException
-//    SpockIgnoreRestUsed
-//    UnnecessaryFail
-//    UseAssertEqualsInsteadOfAssertTrue
-//    UseAssertFalseInsteadOfNegation
-//    UseAssertNullInsteadOfAssertEquals
-//    UseAssertSameInsteadOfAssertTrue
-//    UseAssertTrueInsteadOfAssertEquals
-//    UseAssertTrueInsteadOfNegation
+    //    ChainedTest
+    //    CoupledTestCase
+    //    JUnitAssertAlwaysFails
+    //    JUnitAssertAlwaysSucceeds
+    //    JUnitFailWithoutMessage
+    //    JUnitLostTest
+    //    JUnitPublicField
+    //    JUnitPublicNonTestMethod
+    //    JUnitPublicProperty
+    //    JUnitSetUpCallsSuper
+    //    JUnitStyleAssertions
+    //    JUnitTearDownCallsSuper
+    //    JUnitTestMethodWithoutAssert
+    //    JUnitUnnecessarySetUp
+    //    JUnitUnnecessaryTearDown
+    //    JUnitUnnecessaryThrowsException
+    //    SpockIgnoreRestUsed
+    //    UnnecessaryFail
+    //    UseAssertEqualsInsteadOfAssertTrue
+    //    UseAssertFalseInsteadOfNegation
+    //    UseAssertNullInsteadOfAssertEquals
+    //    UseAssertSameInsteadOfAssertTrue
+    //    UseAssertTrueInsteadOfAssertEquals
+    //    UseAssertTrueInsteadOfNegation
 
     // rulesets/logging.xml
     LoggerForDifferentClass
@@ -302,29 +303,29 @@ ruleset {
     SystemOutPrint
 
     // rulesets/naming.xml
-    AbstractClassName
-    ClassName {
-        regex = '^[A-Z][\\$a-zA-Z0-9]*$'
-    }
-    ClassNameSameAsFilename
-    ConfusingMethodName
-    FactoryMethodName
-    FieldName {
-        regex = '^_?[a-z][a-zA-Z0-9]*$'
-        finalRegex = '^_?[a-z][a-zA-Z0-9]*$'
-        staticFinalRegex = '^logger$|^[A-Z][A-Z_0-9]*$|^serialVersionUID$'
-    }
-    InterfaceName
-    MethodName {
-        regex = '^[a-z][\\$_a-zA-Z0-9]*$|^.*\\s.*$'
-    }
-    ObjectOverrideMisspelledMethodName
-    PackageName
-    ParameterName
-    PropertyName
-    VariableName {
-        finalRegex = '^[a-z][a-zA-Z0-9]*$'
-    }
+    // AbstractClassName
+    // ClassName {
+    //     regex = '^[A-Z][\\$a-zA-Z0-9]*$'
+    // }
+    // ClassNameSameAsFilename
+    // ConfusingMethodName
+    // FactoryMethodName
+    // FieldName {
+    //     regex = '^_?[a-z][a-zA-Z0-9]*$'
+    //     finalRegex = '^_?[a-z][a-zA-Z0-9]*$'
+    //     staticFinalRegex = '^logger$|^[A-Z][A-Z_0-9]*$|^serialVersionUID$'
+    // }
+    // InterfaceName
+    // MethodName {
+    //     regex = '^[a-z][\\$_a-zA-Z0-9]*$|^.*\\s.*$'
+    // }
+    // ObjectOverrideMisspelledMethodName
+    // PackageName
+    // ParameterName
+    // PropertyName
+    // VariableName {
+    //     finalRegex = '^[a-z][a-zA-Z0-9]*$'
+    // }
 
     // rulesets/security.xml
     FileCreateTempFile
@@ -376,7 +377,7 @@ ruleset {
     UnnecessaryElseStatement
     UnnecessaryFinalOnPrivateMethod
     UnnecessaryFloatInstantiation
-    UnnecessaryGString
+    // UnnecessaryGString
     UnnecessaryGetter
     UnnecessaryIfStatement
     UnnecessaryInstanceOfCheck
